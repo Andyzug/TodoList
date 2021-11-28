@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "npx webpack-dev-server --mode development",
     "build": "npx webpack --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serv": "npm --prefix E:/Ex_Files_Building_Modern_Projects_React/Exercise_Files/react-ecosystems-server/react-ecosystems-server/ run start",
+    "devserv": "concurrently --kill-others \"npm run dev\" \"npm run serv\""
   },
   "keywords": [],
   "author": "",
@@ -18,6 +20,7 @@
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-react": "^7.16.0",
     "babel-loader": "^8.2.3",
+    "concurrently": "^6.4.0",
     "css-loader": "^6.5.1",
     "react-hot-loader": "^4.13.0",
     "style-loader": "^3.3.1",
